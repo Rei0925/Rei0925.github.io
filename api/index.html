@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServerChannelChat API</title>
+    <link rel="stylesheet" href="../style.css">
+    <!-- Prism.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <!-- キーワードにクラスを付与 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/highlight-keywords/prism-highlight-keywords.min.js"></script>
+
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>ServerChannelChat API</h1>
+      <p>プラグイン外部連携のためのAPI情報</p>
+      <div class="buttons">
+        <a href="../" class="btn">トップに戻る</a>
+        <a href="/javadoc" class="btn">JavaDoc</a>
+        <a href="/Dokka" class="btn">KDoc</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+        <h2>APIの参照方法(予定)</h2>
+        <p>ServerChannelChatのAPIは、将来的に公開予定の <strong>JavaDoc</strong> や <strong>Dokka</strong> を参照して利用できます。</p>
+        <p>外部プラグインからチャネル操作やメッセージ送信を行う場合は、以下のような使い方を想定しています。</p>
+        <pre><code class="language-kotlin">ServerChannelChatAPI.sendMessage(player, channelName, "メッセージ内容")
+</code></pre>
+    </section>
+
+    <section>
+      <h2>将来的な追加予定</h2>
+      <ul>
+        <li>非同期チャネル操作のサポート</li>
+        <li>権限付きチャンネル管理APIの拡張</li>
+        <li>チャネルイベントリスナーの追加</li>
+        <li>Dokkaによる自動生成ドキュメントの常時最新化</li>
+      </ul>
+      <p>これらは将来的に順次実装される予定です。</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>サポート: <a href="https://discord.gg/リンク" target="_blank">Discord</a></p>
+  </footer>
+</body>
+</html>
