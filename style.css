@@ -83,6 +83,25 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.code-tabs { margin-top: 20px; }
+.tab-buttons { margin-bottom: 10px; }
+.tab-btn {
+  background: #00cfff;
+  border: none;
+  color: #000;
+  padding: 8px 18px;
+  margin-right: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.tab-btn.active {
+  background: #0099cc;
+  color: #fff;
+}
+.code-content { display: none; }
+.code-content.active { display: block; }
+
 /* スマホ対応（画面幅600px以下） */
 @media (max-width: 600px) {
 

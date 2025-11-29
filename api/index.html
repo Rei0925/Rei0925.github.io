@@ -12,7 +12,6 @@
     <!-- キーワードにクラスを付与 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/highlight-keywords/prism-highlight-keywords.min.js"></script>
 
-    <script>hljs.highlightAll();</script>
 </head>
 <body>
   <header>
@@ -32,8 +31,20 @@
         <h2>APIの参照方法(予定)</h2>
         <p>ServerChannelChatのAPIは、将来的に公開予定の <strong>JavaDoc</strong> や <strong>KDoc</strong> を参照して利用できます。</p>
         <p>外部プラグインからチャネル操作やメッセージ送信を行う場合は、以下のような使い方を想定しています。</p>
-        <pre><code class="language-kotlin">ServerChannelChatAPI.sendMessage(player, channelName, "メッセージ内容")
-</code></pre>
+        <div class="code-tabs">
+          <div class="tab-buttons">
+            <button class="tab-btn active" data-target="kotlin">Kotlin</button>
+            <button class="tab-btn" data-target="java">Java</button>
+          </div>
+
+          <pre id="kotlin" class="code-content active"><code class="language-kotlin">
+ServerChannelChatAPI.sendMessage(player, channelName, "メッセージ内容")
+          </code></pre>
+
+          <pre id="java" class="code-content"><code class="language-java">
+ServerChannelChatAPI.sendMessage(player, channelName, "メッセージ内容");
+          </code></pre>
+        </div>
     </section>
 
     <section>
@@ -52,4 +63,14 @@
     <p>サポート: <a href="https://discord.gg/リンク" target="_blank">Discord</a></p>
   </footer>
 </body>
+<script>
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.code-content').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(btn.dataset.target).classList.add('active');
+  });
+});
+</script>
 </html>
