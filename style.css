@@ -82,3 +82,43 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+/* スマホ対応（画面幅600px以下） */
+@media (max-width: 600px) {
+
+  header {
+    padding: 40px 15px;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    margin: 5px 0;
+    padding: 12px 25px;
+    font-size: 1em;
+  }
+
+  main {
+    padding: 30px 15px;
+  }
+
+  section h2 {
+    font-size: 1.4em;
+  }
+
+  pre {
+    font-size: 0.9em;
+  }
+}
