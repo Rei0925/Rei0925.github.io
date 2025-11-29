@@ -83,3 +83,51 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* スマホ対応（画面幅600px以下） */
+@media (max-width: 600px) {
+
+  header {
+    padding: 35px 15px;
+  }
+
+  header h1 {
+    font-size: 2.2em;
+    line-height: 1.2;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  /* ボタンを縦並びにする */
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .btn {
+    width: 85%;
+    margin: 0;
+    padding: 14px 10px;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  main {
+    padding: 25px 15px;
+  }
+
+  section h2 {
+    font-size: 1.4em;
+  }
+
+  /* コードブロックをスマホ向けに調整 */
+  pre {
+    font-size: 0.9em;
+    padding: 12px;
+    white-space: pre-wrap; /* スマホでは折り返す */
+    word-wrap: break-word;
+  }
+}
