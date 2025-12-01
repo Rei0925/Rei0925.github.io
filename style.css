@@ -155,3 +155,71 @@ footer a:hover {
     word-wrap: break-word;
   }
 }
+
+/* ==== CHANGELOG 用スタイル ==== */
+
+.changelog {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.version-block {
+  background: #111;
+  padding: 20px;
+  border-left: 5px solid #00cfff;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.version-title {
+  font-size: 1.6em;
+  color: #00cfff;
+  margin: 0 0 10px 0;
+}
+
+.version-date {
+  font-size: 0.9em;
+  color: #999;
+  margin-bottom: 15px;
+}
+
+.change-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.change-list li {
+  padding: 6px 0;
+  border-bottom: 1px solid #222;
+}
+
+.change-list li:last-child {
+  border-bottom: none;
+}
+
+/* 種類ごとの色付け */
+.tag-added {
+  color: #00ffea; /* 水色寄りの緑 */
+  font-weight: bold;
+}
+
+.tag-fixed {
+  color: #ffdd55;
+  font-weight: bold;
+}
+
+.tag-changed {
+  color: #ff8844;
+  font-weight: bold;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+  .version-block {
+    padding: 15px;
+  }
+
+  .version-title {
+    font-size: 1.3em;
+  }
+}
