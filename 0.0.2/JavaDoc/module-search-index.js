@@ -1,1 +1,0 @@
-var moduleSearchIndex = [{"l":"ServerChannelChat","url":"index.html"}]
