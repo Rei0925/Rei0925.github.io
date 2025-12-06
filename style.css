@@ -1,4 +1,6 @@
 /* style.css */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Sans+JP:wght@100..900&display=swap');
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
